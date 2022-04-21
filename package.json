@@ -1,0 +1,47 @@
+{
+  "name": "@open-tech-world/route-matcher",
+  "version": "0.1.0",
+  "description": "A route pattern matcher using a regular expression.",
+  "keywords": [
+    "route",
+    "pattern",
+    "match",
+    "matcher",
+    "regex",
+    "path",
+    "url"
+  ],
+  "author": {
+    "name": "Thanga Ganapathy",
+    "email": "ganapathy888@gmail.com",
+    "url": "https://thanga-ganapathy.github.io"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/open-tech-world/route-matcher",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-tech-world/route-matcher.git"
+  },
+  "source": "src/index.ts",
+  "main": "lib/main.js",
+  "module": "lib/module.js",
+  "types": "lib/types.d.ts",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "build": "parcel build",
+    "test": "jest",
+    "lint": "eslint src/**",
+    "type-check": "tsc",
+    "ci": "yarn build && yarn test && yarn lint && yarn type-check"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "yarn@3.2.0"
+}
