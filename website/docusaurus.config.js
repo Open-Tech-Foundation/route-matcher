@@ -49,15 +49,19 @@ const config = {
         },
         items: [
           {
-            label: "v" + pkgVer,
-            position: "right",
-            href: `https://www.npmjs.com/package/@open-tech-world/${repoName}`,
-          },
-          {
             type: "doc",
             docId: "Getting Started",
             position: "left",
             label: "Docs",
+          },
+          {
+            label: "Tester",
+            to: "/tester",
+          },
+          {
+            label: "v" + pkgVer,
+            position: "right",
+            href: `https://www.npmjs.com/package/@open-tech-world/${repoName}`,
           },
           {
             href: `https://github.com/open-tech-world/${repoName}`,

@@ -16,14 +16,14 @@ values={[
 <TabItem value="npm">
 
 ```shell
-npm install @open-tech-world/
+npm install @open-tech-world/route-matcher
 ```
 
 </TabItem>
   <TabItem value="yarn">
 
 ```shell
-yarn add @open-tech-world/
+yarn add @open-tech-world/route-matcher
 ```
 
   </TabItem>
@@ -32,5 +32,5 @@ yarn add @open-tech-world/
 ## Usage
 
 ```jsx
-import {} from "@open-tech-world/";
+import { routeMatcher } from "@open-tech-world/route-matcher";
 ```
