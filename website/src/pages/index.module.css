@@ -25,3 +25,26 @@
 .features {
   padding: 50px;
 }
+
+.features ul {
+  margin-top: 25px;
+  margin-left: 15px;
+  list-style: none;
+}
+
+
+.featuresText {
+  clip-path: polygon(0 19%, 85% 23%, 100% 100%, 14% 100%);
+  width: 180px;
+  height: 35px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ifm-color-primary)
+}
+
+.featuresText h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}

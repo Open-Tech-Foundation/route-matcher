@@ -10,7 +10,7 @@ const pkgVer = require(`../packages/${repoName}/package.json`).version;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Route Matcher",
-  tagline: "A route pattern matcher using a regular expression.",
+  tagline: "A route pattern matcher using regular expressions.",
   url: "https://route-matcher.pages.dev",
   baseUrl: "/",
   onBrokenLinks: "throw",
