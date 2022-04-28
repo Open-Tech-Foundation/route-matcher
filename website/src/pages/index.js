@@ -39,7 +39,11 @@ export default function Home() {
             <h3>FEATURES</h3>
           </div>
           <ul>
+            <li> ✔️ Simple API</li>
             <li> ✔️ Strict parsing</li>
+            <li> ✔️ Supports named & unnamed parameters</li>
+            <li> ✔️ Supports custom regular experssions</li>
+            <li> ✔️ Parameters can be repeated or optional</li>
           </ul>
         </div>
       </main>
