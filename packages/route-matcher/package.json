@@ -1,7 +1,7 @@
 {
   "name": "@open-tech-world/route-matcher",
   "version": "0.1.0",
-  "description": "A route pattern matcher using a regular expression.",
+  "description": "A route pattern matcher using regular expressions.",
   "keywords": [
     "route",
     "pattern",
