@@ -36,6 +36,8 @@ export default function Tester() {
           <div className={styles.testerFormRow}>
             <label>Route</label>
             <input
+              spellCheck={false}
+              placeholder="/path/:param"
               type="text"
               onChange={(e) => {
                 setState({ ...state, route: e.target.value });
@@ -45,6 +47,8 @@ export default function Tester() {
           <div className={styles.testerFormRow}>
             <label>Path</label>
             <input
+              spellCheck={false}
+              placeholder="/path/value"
               type="text"
               onChange={(e) => {
                 setState({ ...state, path: e.target.value });
