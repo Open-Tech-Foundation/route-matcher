@@ -31,6 +31,10 @@ yarn add @open-tech-world/route-matcher
 
 ## Usage
 
-```jsx
+```ts
 import { routeMatcher } from "@open-tech-world/route-matcher";
+
+routeMatcher(route: string, path: string): RouteSegment[] | null;
+
+// Eg: routeMatcher("/path/:param", "/path/value");
 ```

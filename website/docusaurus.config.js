@@ -28,7 +28,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           sidebarCollapsed: false,
           // Please change this to your repo.
-          editUrl: `https://github.com/open-tech-world/${repoName}/tree/main/`,
+          editUrl: `https://github.com/open-tech-world/${repoName}/tree/main/website`,
         },
         blog: false,
         theme: {
