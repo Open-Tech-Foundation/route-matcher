@@ -169,15 +169,19 @@ describe('routeMatcher', () => {
   });
 
   test('optional paramas', () => {
-    expect(routeMatcher('/:foo/:bar?', '/foo')).toBe(null);
-    expect(routeMatcher('/:foo/:bar?', '/foo/')).toEqual([
+    expect(routeMatcher('/:docs/:lang?', '/docs')).toEqual([
       {
         type: 'DYNAMIC',
-        params: [{ name: 'foo', value: 'foo' }],
+        params: [{ name: 'docs', value: 'docs' }],
       },
       {
         type: 'DYNAMIC',
-        params: [{ name: 'bar', value: undefined }],
+        params: [
+          {
+            name: 'lang',
+            value: undefined,
+          },
+        ],
       },
     ]);
     expect(routeMatcher('/:foo/:bar?', '/foo/bar')).toEqual([
@@ -241,19 +245,19 @@ describe('routeMatcher', () => {
       },
     ]);
     expect(
-      routeMatcher('/(apple-)?icon-:res(\\d+).png', '/apple-icon-240.png')
+      routeMatcher('/((?:apple-)?)icon-:size(\\d+).png', '/apple-icon-240.png')
     ).toEqual([
       {
         type: 'DYNAMIC',
-        params: [{ name: 'res', value: '240' }],
+        params: [{ name: 'size', value: '240' }],
       },
     ]);
     expect(
-      routeMatcher('/(apple-)?icon-:res(\\d+).png', '/icon-240.png')
+      routeMatcher('/((?:apple-)?)icon-:size(\\d+).png', '/icon-240.png')
     ).toEqual([
       {
         type: 'DYNAMIC',
-        params: [{ name: 'res', value: '240' }],
+        params: [{ name: 'size', value: '240' }],
       },
     ]);
     expect(
