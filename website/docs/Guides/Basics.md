@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 ## Definitions
 
 - **URL**: Uniform Resource Locator (URL) is a text string that specifies where a resource (such as a web page, image, or video) can be found on the Internet. URLs are called "Web address" or "link". Your browser displays URLs in its address bar. - [MDN](https://developer.mozilla.org/en-US/docs/Glossary/URL)
@@ -30,7 +34,7 @@ The function accepts a `route` string and a `path` string as parameters.
 
 The function returns an array of matched segments as a `RouteSegment` or `null` if they are not matched.
 
-## Example
+## Examples
 
 ```js
 import { routeMatcher } from "@open-tech-world/route-matcher";
@@ -46,5 +50,40 @@ routeMatcher("/", "/");
     }
 ]
 
+*/
+
+routeMatcher('/', '/a'); // null
+
+routeMatcher("/portfolio", "/portfolio");
+
+/*
+
+[
+    {
+        "type": "EXACT",
+        "params": []
+    }
+]
+
+*/
+
+routeMatcher("/users/:id", "/users/123");
+
+/*
+[
+    {
+        "type": "STATIC",
+        "params": []
+    },
+    {
+        "type": "DYNAMIC",
+        "params": [
+            {
+                "name": "id",
+                "value": "123"
+            }
+        ]
+    }
+]
 */
 ```
