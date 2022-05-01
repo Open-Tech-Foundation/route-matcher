@@ -26,7 +26,6 @@ function parseUnNamedParam(str: string) {
 
   pat = parseCustomRegExp(str);
   len += pat.length;
-
   pat = '(?:' + pat + ')';
 
   return { pat, len };
@@ -81,7 +80,6 @@ export default function parse(route: string) {
       currentType = 'DYNAMIC';
       const { pat, len } = parseUnNamedParam(route.slice(i));
 
-      // pattern += pat;
       i += len + 1;
 
       if (isModifier(route[i + 1])) {
