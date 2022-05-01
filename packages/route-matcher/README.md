@@ -9,30 +9,45 @@
 
 </div>
 
-> A route pattern matcher using a regular expression.
+> A route pattern matcher using regular expressions.
 
 ## Features
 
+- Simple API</li>
+- Strict parsing (<a href="https://route-matcher.pages.dev/docs/Parser%20Rules">See parser rules</a>)
+  </li>
+- Supports named & unnamed parameters</li>
+- Supports custom regular experssions</li>
+- Parameters can be repeated or optional</li>
+
+## Live Tester
+
+[https://route-matcher.pages.dev/tester](https://route-matcher.pages.dev/tester)
+
 ## Installation
 
-Using npm
+```bash
+# With npm
+$ npm install @open-tech-world/route-matcher
 
-```shell
-npm install @open-tech-world/route-matcher
-```
-
-Using Yarn
-
-```shell
-yarn add @open-tech-world/route-matcher
+# With yarn
+$ yarn add @open-tech-world/route-matcher
 ```
 
 ## Usage
 
-```jsx
+```ts
+import { routeMatcher } from "@open-tech-world/route-matcher";
 
+routeMatcher(route: string, path: string): RouteSegment[] | null;
+
+// Eg: routeMatcher("/path/:param", "/path/value");
 ```
+
+## Documentation
+
+Please read the complete documentation at: [https://route-matcher.pages.dev/](https://route-matcher.pages.dev/)
 
 ## License
 
-Copyright (c) 2021, [Thanga Ganapathy](https://github.com/Thanga-Ganapathy) ([MIT License](./LICENSE)).
+Copyright (c) [Thanga Ganapathy](https://github.com/Thanga-Ganapathy) ([MIT License](../../LICENSE)).
