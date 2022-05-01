@@ -4,9 +4,9 @@ sidebar_position: 3
 
 The route segments can be repeated.
 
-- Zero or more times by suffixing `*` modifier
+- Zero or more times by suffixing the star `*` modifier
 
-- One or more times by suffixing `+` modifier
+- One or more times by suffixing the plus `+` modifier
 
 ## Modifier - `*`
 
