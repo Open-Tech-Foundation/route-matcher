@@ -40,7 +40,11 @@ export default function Home() {
           </div>
           <ul>
             <li> ✔️ Simple API</li>
-            <li> ✔️ Strict parsing</li>
+            <li>
+              {" "}
+              ✔️ Strict parsing (
+              <a href="/docs/Parser%20Rules">See parser rules</a>)
+            </li>
             <li> ✔️ Supports named & unnamed parameters</li>
             <li> ✔️ Supports custom regular experssions</li>
             <li> ✔️ Parameters can be repeated or optional</li>

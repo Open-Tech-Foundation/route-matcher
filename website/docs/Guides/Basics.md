@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+[![An image from the static](/img/mdn-url-all.png)](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)
+
 ## Definitions
 
 - **URL**: Uniform Resource Locator (URL) is a text string that specifies where a resource (such as a web page, image, or video) can be found on the Internet. URLs are called "Web address" or "link". Your browser displays URLs in its address bar. - [MDN](https://developer.mozilla.org/en-US/docs/Glossary/URL)
